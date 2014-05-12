@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.2/users/1397997/answers?order=desc&page=1&site=stackoverflow&sort=activity
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Mon, 12 May 2014 12:59:44 GMT
+      Content-Length:
+      - '601'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":true,"score":0,"last_activity_date":1396348575,"creation_date":1396348575,"answer_id":22783363,"question_id":22782960},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1362564788,"creation_date":1362564788,"answer_id":15244436,"question_id":15244221},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1362564365,"creation_date":1362564365,"answer_id":15244263,"question_id":15243898},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1347961292,"creation_date":1347961292,"answer_id":12474347,"question_id":12473982},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1346398047,"creation_date":1346398047,"answer_id":12210717,"question_id":12210687},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1343564385,"last_edit_date":1343564385,"creation_date":1343564072,"answer_id":11709163,"question_id":11709032},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":true,"score":0,"last_activity_date":1343556301,"creation_date":1343556301,"answer_id":11708355,"question_id":11700428},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":1,"last_activity_date":1343546912,"creation_date":1343546912,"answer_id":11707499,"question_id":11704495},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1341484513,"creation_date":1341484513,"answer_id":11342569,"question_id":11342399},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":1,"last_activity_date":1340359311,"creation_date":1340359311,"answer_id":11154086,"question_id":11154034},{"owner":{"reputation":383,"user_id":1397997,"user_type":"registered","accept_rate":77,"profile_image":"http://www.gravatar.com/avatar/18cfe414c4e04dadef2c438d619cf057?s=128&d=identicon&r=PG","display_name":"Jasper","link":"http://stackoverflow.com/users/1397997/jasper"},"is_accepted":false,"score":0,"last_activity_date":1340217657,"creation_date":1340217657,"answer_id":11126062,"question_id":11125895}],"has_more":false,"quota_max":300,"quota_remaining":290}'
+    http_version: 
+  recorded_at: Mon, 12 May 2014 12:59:45 GMT
+recorded_with: VCR 2.9.0

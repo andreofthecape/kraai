@@ -4,7 +4,7 @@ module Kraai
 
 	class StackExchange
 	  include HTTParty
-	  attr_accessor :site, :page, :order, :sort, :tagged
+	  attr_accessor :site, :page, :order, :sort, :tagged, :user
 	  # Api Example
 	  # HTTParty.get('https://api.stackexchange.com/2.1/users/1327379/answers?order=desc&sort=activity&site=stackoverflow')
 

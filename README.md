@@ -27,13 +27,10 @@ This will create the object with several default values that can be overwritten 
 
 You can now call several methods on this now object:
 
-.questions (All questions)
 .user_questions(user) (All questions for given user)
 .user_answers(user) (All answers for given user))
 .unanswered(tagged) (Return 30 questions with given tag with no accepted answer)
 .noanswers(tagged) (Return 30 questions with given tag with no answers)
-.users (Return users of site)
-.sites (Return list of StackExchange sites)
 
 ## Contributing
 

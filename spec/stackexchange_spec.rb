@@ -43,4 +43,58 @@ describe Kraai::StackExchange do
 			
 		end
 	end
+
+	describe ".noanswers" do
+		
+		it "should respond ok" do
+			VCR.use_cassette 'stackexchange/noanswers' do
+				response.noanswers("ruby").response.code.should eq('200')
+			end
+			
+		end
+		
+		it "should set tag" do
+			VCR.use_cassette 'stackexchange/noanswers' do
+				response.noanswers("ruby")
+				response.tagged.should eq("ruby")
+			end
+			
+		end
+	end
+
+	describe ".user_questions" do
+		
+		it "should respond ok" do
+			VCR.use_cassette 'stackexchange/user_questions' do
+				response.user_questions("1397997").response.code.should eq('200')
+			end
+			
+		end
+		
+		it "should set user" do
+			VCR.use_cassette 'stackexchange/user_questions' do
+				response.user_questions("1397997")
+				response.user.should eq("1397997")
+			end
+			
+		end
+	end
+
+	describe ".user_answers" do
+		
+		it "should respond ok" do
+			VCR.use_cassette 'stackexchange/user_answers' do
+				response.user_answers("1397997").response.code.should eq('200')
+			end
+			
+		end
+		
+		it "should set user" do
+			VCR.use_cassette 'stackexchange/user_answers' do
+				response.user_answers("1397997")
+				response.user.should eq("1397997")
+			end
+			
+		end
+	end
 end
