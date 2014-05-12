@@ -1,6 +1,5 @@
 # Kraai
-
-Wrapper for StackExchange Api.
+Ruby wrapper for StackExchange Api.
 
 ## Installation
 
