@@ -19,34 +19,34 @@ Or install it yourself as:
 
 Create a new kraai object by calling:
 
-    Kraai::StackExchange.new
+    @response = Kraai::StackExchange.new
 
 This will create the object with several default values that can be overwritten at call time, eg:
 
     site = "stackoverflow", page = 1, sort = "activity", order = "desc"
 
-You can now call several methods on this now object:
+You can now call several methods on this new object:
 
-    .user_questions(user)
+    @response.user_questions(user)
 
 Returns 30 questions for given user. 
 
-    .user_answers(user)
+    @response.user_answers(user)
 
 Returns 30 answers for given user.
 
-    .unanswered(tagged)
-Returns 30 questions with given tag with no accepted answer
+    @response.unanswered(tagged)
+Returns 30 questions with given tag with no accepted answer from the Stackoverflow site.
 
-    .noanswers(tagged)
-Returns 30 questions with given tag with no answers.
+    @response.noanswers(tagged)
+Returns 30 questions with given tag with no answers from the Stackoverflow site.
 
 ## Example
 
-    response = Kraai::StackExchange.new
-    response.site = "stackoverflow"
-    response.unanswered("ruby")
-Returns 30 unanswered questions tagged ruby
+    @response = Kraai::StackExchange.new(site="programmers")
+    @response.unanswered("ruby")
+
+Returns 30 unanswered questions tagged ruby from the programmers site
 
 ## Contributing
 
