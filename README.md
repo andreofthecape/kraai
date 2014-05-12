@@ -1,4 +1,4 @@
-# Kraai
+# Kraai [![Build Status](https://secure.travis-ci.org/andreofthecape/kraai.png)](https://secure.travis-ci.org/andreofthecape/kraai.png)
 Ruby wrapper for StackExchange Api.
 
 ## Installation
