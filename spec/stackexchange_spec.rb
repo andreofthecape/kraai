@@ -1,36 +1,46 @@
 require 'spec_helper'
+require 'vcr'
 # require_relative '../lib/kraai'
 
 describe Kraai::StackExchange do
 
+	let(:response) { Kraai::StackExchange.new }
+
 	describe "default options get set on .new" do
 		
-		before { @response = Kraai::StackExchange.new }
-		
 		it "should set site" do
-			@response.site.should eq('stackoverflow')
+			response.site.should eq('stackoverflow')
 		end
 
 		it "should set page" do
-			@response.page.should eq(1)
+			response.page.should eq(1)
 		end
 
 		it "should set order" do
-			@response.order.should eq("desc")
+			response.order.should eq("desc")
 		end
 
 		it "should set sort" do
-			@response.sort.should eq("activity")
+			response.sort.should eq("activity")
 		end
 
 	end
 
-	describe "default options get set on .new" do
+	describe ".unanswered" do
 		
-		before { @response = Kraai::StackExchange.new }
+		it "should respond ok" do
+			VCR.use_cassette 'stackexchange/unanswered' do
+				response.unanswered("ruby").response.code.should eq('200')
+			end
+			
+		end
 		
-		it "should set site" do
-			@response.unanswered("ruby").tagged.should eq("ruby")
+		it "should set tag" do
+			VCR.use_cassette 'stackexchange/unanswered' do
+				response.unanswered("ruby")
+				response.tagged.should eq("ruby")
+			end
+			
 		end
 	end
 end
