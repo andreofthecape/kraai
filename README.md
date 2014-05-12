@@ -19,22 +19,22 @@ Or install it yourself as:
 ## Usage
 
 Create a new kraai object by calling:
-> Kraai::StackExchange.new
+```Kraai::StackExchange.new```
 This will create the object with several default values that can be overwritten at call time, eg: 
-> site = "stackoverflow"
-> page=1
-> sort="activity"
-> order="desc"
+```site = "stackoverflow"
+page=1
+sort="activity"
+order="desc"```
 
 You can now call several methods on this now object:
 
-> .user_questions(user) 
+```.user_questions(user)``` 
 Returns 30 questions for given user.
-> .user_answers(user) 
+```.user_answers(user)``` 
 Returns 30 answers for given user.
-> .unanswered(tagged)
+```.unanswered(tagged)```
 Returns 30 questions with given tag with no accepted answer
-> .noanswers(tagged)
+```.noanswers(tagged)```
 Returns 30 questions with given tag with no answers.
 
 ## Example
